@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+.gamedetail{
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  width: 45%;
+  justify-items: center;
+  align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.outer{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.playarea {
+  border: 15px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+}
+.square{
+  height: 8vh;
+  width: 4vw;
+  border: 1px solid white;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+}
+.r{
+  background-color: red;
+}
+.g{
+  background-color: green;
+}
+.b{
+  background-color: blue;
+}
+.w{
+  background-color: white;
+}
+.restart{
+  color: blue;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
