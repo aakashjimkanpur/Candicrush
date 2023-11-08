@@ -66,8 +66,7 @@ function App() {
         alert("Hurray!! you won the Game!! \n Press Ok to start new Game");
         setGameWon(gameWon + 1);
         filldashboard();
-      }
-      if (burstLeft <= 1 && score + count < target) {
+      } else if (burstLeft <= 1 && score + count < target) {
         alert("Sorry!! you Lose the Game \n Press Ok to start new Game");
         setGameLoss(gameLoss + 1);
         filldashboard();
