@@ -6,6 +6,7 @@
   align-items: center;
 }
 .outer{
+  background-color: papayawhip;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,13 +25,15 @@
   flex-direction: row;
 }
 .square{
-  height: 8vh;
+  height: 6vh;
   width: 4vw;
   border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding:1px;
+  margin:1px;
 }
 .r{
   background-color: red;
