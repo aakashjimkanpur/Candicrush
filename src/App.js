@@ -187,7 +187,6 @@ function App() {
                     onClick={handleClick}
                     className={"square " + color}
                   >
-                    {color === "w" ? `` : `${x},${y},${color}`}
                   </div>
                 );
               })}
